@@ -1,0 +1,80 @@
+{
+  "name": "swift-sdk-version-list",
+  "version": "1.0.0",
+  "keywords": [
+    "swift",
+    "vapor",
+    "hummingbird"
+  ],
+  "homepage": "https://github.com/zentered/swift-sdk-version-list#readme",
+  "bugs": {
+    "url": "https://github.com/zentered/swift-sdk-version-list/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zentered/swift-sdk-version-list.git"
+  },
+  "license": "MIT",
+  "author": "Zentered OÜ <https://zentered.co>",
+  "contributors": [
+    {
+      "name": "Patrick Heneise",
+      "email": "patrick@zentered.co",
+      "url": "https://zentered.co"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,json,jsx,md,mdx}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,md,mdx}": [
+      "eslint --cache --fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-import-assertions": "^7.16.5",
+    "@heroicons/react": "1.0.5",
+    "copy-to-clipboard": "^3.3.1",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-github-btn": "^1.2.1",
+    "react-markdown": "^7.1.1",
+    "remark-gfm": "^3.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@windicss/plugin-animations": "^1.0.9",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "windicss-webpack-plugin": "^1.6.0"
+  }
+}
