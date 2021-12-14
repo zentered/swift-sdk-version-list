@@ -164,7 +164,7 @@ export async function getStaticProps(context) {
   ]
   const searchPattern = ['-nio', '-kit', '-driver']
   const reposResponse = await fetch(
-    'https://api.github.com/orgs/vapor/repos?type=public&per_page=5',
+    'https://api.github.com/orgs/vapor/repos?type=public&per_page=100',
     {
       headers: {
         authorization: `token ${process.env.GITHUB_TOKEN}`,
