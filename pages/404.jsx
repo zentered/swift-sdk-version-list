@@ -1,3 +1,3 @@
-export default function NotFound() {
-  return <div>Page not found.</div>
+export default function Fivehundred() {
+  return <div>Something went wrong.</div>
 }
